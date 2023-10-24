@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import Dell from "../../public/dell.png";
 import HP from "../../public/hp.png";
+import aboutImage from "../../public/bg-3.jpg"
 import { aboutCardContent, partnerCardContent } from "@/data";
 import AboutCard from "@/components/AboutCard";
 import PartnerCard from "@/components/PartnerCard";
@@ -59,11 +60,7 @@ export default function Home() {
               </div>
               <div className="col-lg-6 col-md-6">
                 <div className="about-item-img">
-                  <img
-                    src="https://dummyimage.com/540x350/a19ea1/fff"
-                    alt=""
-                    className="img-fluid"
-                  />
+                  <Image src={aboutImage} fill />
                 </div>
               </div>
             </div>
